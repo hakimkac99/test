@@ -145,9 +145,9 @@ payload example :
 ## Environment 
 
 - Libs : 
-    github.com/gin-gonic/gin
-    golang.org/x/crypto
-    gopkg.in/mgo.v2
+    - github.com/gin-gonic/gin
+    - golang.org/x/crypto
+    - gopkg.in/mgo.v2
 
 - Developement OS : 
     Windows 10
