@@ -177,13 +177,14 @@ func InsertUsers(c *gin.Context) {
 					doneCreatingFile <- 1
 				}()
 
-				<-doneHashing
+				<-doneHashing //Waiting the hashing to finish before inserting to database
 				err = db.C(UserCollection).Insert(deserialUser)
 				if err != nil {
 					c.JSON(http.StatusBadRequest, gin.H{"status": "failed", "message": errInsertionFailed.Error()})
 					return
 				}
 
+				//Waiting creating file before exiting the goroutine
 				<-doneCreatingFile
 				doneInsertingUser <- 1
 			} else {

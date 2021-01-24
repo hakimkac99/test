@@ -8,6 +8,10 @@
 
     ./test-CRUD
 
+## Users files 
+
+    /files
+
 ## API Documentation 
 
 ### 1. Create (POST /api/add/users)
@@ -130,12 +134,29 @@ payload example :
 
 ### 6. Update (UPDATE /api/user/:id)
 
-- update user data with id. If existing changes in data attribute, then update the file.
+- update user data with id. (If existing changes in data attribute, then update the file)
 
 payload example :
 
     {
         "data" : "New data"
     }
+
+## Environment 
+
+- Libs : 
+    github.com/gin-gonic/gin
+    golang.org/x/crypto
+    gopkg.in/mgo.v2
+
+- Developement OS : 
+    Windows 10
+
+- Developemnt IDE :
+    VS Code
+
+- DB name : go-mongo
+
+- Collection name : user 
 
 
