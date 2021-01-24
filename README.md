@@ -1,4 +1,4 @@
-# Test technique stage chez DataImpact
+# Test technique stage
 
 ## Build the project 
     
