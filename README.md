@@ -10,11 +10,11 @@
 
 ## API Documentation 
 
-    ### 1. Create (POST /api/add/users)
+### 1. Create (POST /api/add/users)
 
-    - Add users to MongoDB database, wrangling data (normalize the age attribute), hash password, create a file for each user containing data. (the name of the file is the id of user) and not inserting the existing users.
+- Add users to MongoDB database, wrangling data (normalize the age attribute), hash password, create a file for each user containing data. (the name of the file is the id of user) and not inserting the existing users.
 
-    Payload example :
+Payload example :
 
     [
         {
@@ -101,41 +101,41 @@
         }
     ]
 
-        ### 2. Login (Post /api/login)
+### 2. Login (Post /api/login)
 
-        - Login user 
+- Login user 
 
-        payload example :
+payload example :
 
-        {
-            "id" : "test",
-            "password" : "test"
-        } 
-
-
-        ### 3. Delete (DELETE /api/delete/user/:id)
-
-        - Delete the user and the file.
+    {
+        "id" : "test",
+        "password" : "test"
+    } 
 
 
-        ### 4. Read (GET /api/users/list)
+### 3. Delete (DELETE /api/delete/user/:id)
 
-        - Retrieve all users. 
+- Delete the user and the file.
 
 
-        ### 5. Read (GET /api/user/:id)
+### 4. Read (GET /api/users/list)
 
-        - Retrieve user with id . 
+- Retrieve all users. 
 
-        
-        ### 6. Update (UPDATE /api/user/:id)
 
-        - update user data with id. If existing changes in data attribute, then update the file.
+### 5. Read (GET /api/user/:id)
 
-        payload example :
+- Retrieve user with id . 
 
-        {
-            "data" : "New data"
-        }
+
+### 6. Update (UPDATE /api/user/:id)
+
+- update user data with id. If existing changes in data attribute, then update the file.
+
+payload example :
+
+    {
+        "data" : "New data"
+    }
 
 
