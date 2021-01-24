@@ -128,7 +128,7 @@ func InsertUsers(c *gin.Context) {
 				deserialUser.IsActive = serialUser["isActive"].(bool)
 				deserialUser.Balance = serialUser["balance"].(string)
 
-				//contole age (normalization)
+				//controle age (normalization)
 				switch serialUser["age"].(type) {
 				case string:
 					deserialUser.Age, _ = strconv.Atoi(serialUser["age"].(string))
