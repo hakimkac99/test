@@ -28,6 +28,7 @@ type User struct {
 	Data       string   `bson:"data"`
 }
 
+//friend structure
 type Friend struct {
 	Id   int
 	Name string

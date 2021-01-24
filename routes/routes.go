@@ -14,7 +14,7 @@ func StartGin() {
 		api.POST("/add/users", user.InsertUsers)
 		api.POST("/login", user.Login)
 		api.DELETE("/delete/user/:id", user.DeleteUser)
-		api.GET("/users/list", user.GetAllUser)
+		api.GET("/users/list", user.GetAllUsers)
 		api.GET("/user/:id", user.GetUser)
 		api.PUT("/users/:id", user.UpdateUser)
 

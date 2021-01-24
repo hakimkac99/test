@@ -9,6 +9,7 @@ import (
 
 var db *mgo.Database
 
+//MongoDB settings and connection
 func init() {
 	host := "localhost"
 	dbName := "go-mongo"
