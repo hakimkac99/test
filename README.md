@@ -1,4 +1,4 @@
-# Test technique stage
+# Test technique 
 
 ## Build the project 
     
